@@ -11,4 +11,9 @@ class MainController extends  AppController
         return $this->render('index');
     }
 
+    public function actionCheckout() {
+        $this->view->title = "Корзина";
+        return $this->render('checkout');
+    }
+
 }

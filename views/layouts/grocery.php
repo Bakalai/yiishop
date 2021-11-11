@@ -101,7 +101,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- //header -->
 <div class="banner">
 <?= $this->render("//layouts\inc\sidebar")?>
-<?= $content ?>
+    <?  if (isset($content)) {echo $content;}  ?>
 
 <!-- newsletter -->
 <div class="newsletter">
